@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="https://thymeleaf.org/">
+<head>
+    
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Cursos</title>
+</head>
+<style>
+    
+    *{
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.cabecalho{
+    
+    background-color: #DFD7BF;
+    
+    display: flex;
+    
+    align-items: center;
+    
+    justify-content: center;
+}
+
+img{
+    
+    max-width: 200px;
+}
+
+.cabecalho ul{
+    
+    list-style: none;
+}
+
+.cabecalho li{
+    
+    display: inline-block;
+}
+
+.link{
+    
+    text-decoration: none;
+    
+    color: #3F2305;
+    
+    margin-left: 40px;
+}
+
+.cabecalho a:hover {
+    
+    color: blue;
+}
+
+iframe{
+    
+    padding: 40px;
+}
+
+.aulas{
+    
+    justify-content: space-around;
+    
+    display: flex;
+    
+    flex-wrap: wrap;
+}
+
+h2{
+    
+    text-align: center;
+    
+    color: #3F2305;
+    
+    border-bottom: 1px solid #3F2305;
+}
+
+.btn {
+    
+            background-color: #3F2305;
+    
+            color: #fff;
+    
+            font-size: 14px;
+    
+            font-weight: 600;
+    
+            border: none !important;
+    
+            transition: all linear 160ms;
+    
+            cursor: pointer;
+	   
+	        padding: 30px;
+	        
+	        text-decoration: none;
+    
+            margin: 6px !important;
+    
+            height: 70px;
+    
+            border-radius: 10px;
+    
+            text-align: center;
+    
+            width: 300px;
+    
+            position: relative;
+    
+            top: 20%;
+            
+   
+    
+        }
+
+.btn:hover {
+	background-color: red;
+}
+
+.menu {
+    
+    text-align: center;
+}
+
+
+
+</style>
+<body>
+    
+    <header class="cabecalho">
+    
+        <div><img src="WhatsApp Image 2024-03-16 at 11.47.50-fotor-bg-remover-20240316115425.png" alt=""></div>
+    
+        <nav>
+    
+            <ul>
+    
+                <li> <a class="link" href="#">Home</a></li>
+    
+                <li> <a class="link" href="#">Inicio</a></li>
+    
+                <li> <a class="link" href="#">Meu Perfil</a></li>
+    
+                <li> <a class="link" href="#">Meus Cursos</a></li>
+    
+                <li> <a class="link" href="#">Financeiro</a></li>
+    
+                <li> <a class="link" href="#">Sobre</a></li>
+    
+                <li> <a class="link" href="#">Sair da Conta</a></li>
+    
+            </ul>
+    
+        </nav>
+    
+    </header>
+
+  
+
+    <h2><i>INTRODUÇÃO SOBRE OS CURSOS QUE OFERECEMOS</i></h2>
+
+  
+
+    <div class="aulas">
+    
+        <div>
+    
+            <iframe width="560" height="400" src="https://www.youtube.com/embed/UirRBJfXKd0?si=eUTTYNiNIOr30l7n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+        </div>
+    
+        <div>
+    
+            <iframe width="560" height="400" src="https://www.youtube.com/embed/lk_SHfhDiXk?si=pCcwBNmZWhtLm_zV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+        </div>
+    
+        <div>
+    
+            <iframe width="560" height="400" src="https://www.youtube.com/embed/0e4H4LVUC58?si=n8YLQQjTKAJ7hFDd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+        </div>
+    
+        <div>
+    
+            <iframe width="560" height="400" src="https://www.youtube.com/embed/XTh1Ji8XzGw?si=EJqY-WZ5rOJpeeMo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+        </div>
+    
+        <div>
+    
+            <iframe width="560" height="400" src="https://www.youtube.com/embed/aJIekSYqGuw?si=A4bQZ96P_sYC-h9v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+        </div>
+    
+    </div>
+
+  
+
+    <div class="menu">
+    
+        <a th:href="@{/cadastro/adicionar}"  class="btn">
+    
+                Adicionar Aluno          
+    
+            </a>
+    
+        <a th:href="@{/cadastro/listar}"  class="btn">
+    
+                Listar todos alunos           
+    
+            </a>
+    
+    </div>
+</body>
+</html>
